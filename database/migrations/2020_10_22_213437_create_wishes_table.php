@@ -19,7 +19,7 @@ class CreateWishesTable extends Migration
             $table->string('fulfilled');
             $table->string('email');
             $table->timestamps();
-            $table->index(['id', 'email']);
+            $table->primary(['id', 'email']);
             $table->foreign('email')->references('email')->on('users');
         });
     }
