@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f165794d-db62-4a0e-8d17-578e21baed38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-    </list>
+    <list default="true" id="f165794d-db62-4a0e-8d17-578e21baed38" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +197,7 @@
       <workItem from="1603710081432" duration="1059000" />
       <workItem from="1603736228298" duration="6412000" />
       <workItem from="1603756405804" duration="3382000" />
-      <workItem from="1604011843415" duration="3955000" />
+      <workItem from="1604011843415" duration="4290000" />
     </task>
     <servers />
   </component>
