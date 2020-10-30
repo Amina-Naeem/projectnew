@@ -1,5 +1,5 @@
 //Introduction:
-WishList is the internationalised website which allows user to get registered and login, to make their wish list. 
+WishList is the internationalised Responsive website which allows user to get registered and login, to make their wish list. 
 User will attach a unique integer ID with each wish. Each wish has actions of update, delete and details. 
 ~Update allows user to update the fulfilled status of the wish.
 ~Delete simply deleted the user wish from database.

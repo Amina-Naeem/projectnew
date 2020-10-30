@@ -40,19 +40,19 @@
                                 <div class="text-center">
 
                                     <!-- Main Heading-->
-                                    <h1 class="h4 text-gray-900 mb-4" style="font-size: x-large"><b>@lang('home.WelcometoWishlist')</b></h1>
+                                    <h1 aria-label="main heading" class="h4 text-gray-900 mb-4" style="font-size: x-large"><b>@lang('home.WelcometoWishlist')</b></h1>
 
                                     <!-- Main Message-->
-                                    <p class="text-gray-900" style="font-size: large">@lang('home.welcomeMSG') </p>
+                                    <p aria-label="Website Introduction" class="text-gray-900" style="font-size: large">@lang('home.welcomeMSG') </p>
                                     @if (Route::has('login'))
                                         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block"><!-- class="hidden fixed top-0 right-0 px-6 py-4 sm:block">-->
                                             @auth
                                                 <a href="{{ url('/home') }}" class=" text-gray-900 underline">Home</a>
                                             @else
-                                                <a href="{{ route('login') }}" class=" text-gray-900 underline">@lang('home.login-menu')</a>
+                                                <a aria-label="Login" href="{{ route('login') }}" class=" text-gray-900 underline">@lang('home.login-menu')</a>
 
                                                 @if (Route::has('register'))
-                                                    <a href="{{ route('register') }}" class="ml-4  text-gray-900 underline">@lang('home.register-menu')</a>
+                                                    <a aria-label="Register" href="{{ route('register') }}" class="ml-4  text-gray-900 underline">@lang('home.register-menu')</a>
                                                 @endif
                                             @endif
                                         </div>
