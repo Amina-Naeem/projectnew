@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f165794d-db62-4a0e-8d17-578e21baed38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/wishes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wishes.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,7 @@
       <workItem from="1603710081432" duration="1059000" />
       <workItem from="1603736228298" duration="6412000" />
       <workItem from="1603756405804" duration="3382000" />
-      <workItem from="1604011843415" duration="10448000" />
+      <workItem from="1604011843415" duration="11755000" />
     </task>
     <servers />
   </component>
@@ -260,10 +261,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="39" width="586" height="822" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603322139676" />
-    <state x="692" y="159" width="670" height="742" key="search.everywhere.popup" timestamp="1604055860153">
+    <state x="692" y="159" width="670" height="742" key="search.everywhere.popup" timestamp="1604072690152">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="692" y="159" width="670" height="742" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604055860153" />
+    <state x="692" y="159" width="670" height="742" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604072690152" />
     <state x="692" y="168" width="670" height="676" key="search.everywhere.popup/0.23.1440.821@0.23.1440.821" timestamp="1603314268047" />
   </component>
 </project>

@@ -62,7 +62,7 @@
                         @endif
 
                     <!-- List of Wishes-->
-<table class="table table-striped table-bordered table- text-gray-900">
+<table class="table table-striped table-bordered text-gray-900 tabl table-responsive">
 <thead>
 <tr>
     <th>@lang('home.no')</th>
