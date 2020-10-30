@@ -19,7 +19,6 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('/customeAuth/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-    <!-- Custom fonts for this template-->
 
 </head>
 
@@ -35,29 +34,39 @@
                 <div class="col-lg-7">
                     <div class="p-5">
                         <div class="text-center">
+
+                            <!-- Main Heading-->
                             <h1 class="h4 text-gray-900 mb-4"> {{ strtoupper(Auth::user()->name) }}  @lang('home.wish')  @lang('home.details') </h1>
                         </div>
 
                             <div class="form-group row text-gray-900">
                                 <div class="col-sm-12 mb-3 mb-sm-0 ">
+
+                                    <!--show ID-->
                                     <label>@lang('home.wish') @lang('home.id') </label>
                                     <p  class="form-control form-control-user">{{$wish->id}}</p>
                                 </div>
                             </div>
                             <div class="form-group row text-gray-900">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
+
+                                    <!--show wish-->
                                 <label>@lang('home.wish')</label>
                                 <p class="form-control form-control-user" rows="3"  >{{$wish->wish}}</p>
                                 </div>
                             </div>
                             <div class="form-group row text-gray-900">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
+
+                                    <!-- show fulfilled-->
                                     <label> @lang('home.fulfilled')</label>
                                     <p class="form-control form-control-user">{{$wish->fulfilled}}</p>
                                 </div>
                             </div>
                             <div class="form-group row text-gray-900">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
+
+                                    <!--show created_at-->
                                     <label>@lang('home.createdAt')</label>
                                     <p class="form-control form-control-user">{{$wish->created_at}}</p>
                                 </div>

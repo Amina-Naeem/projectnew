@@ -19,8 +19,6 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('/customeAuth/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-    <!-- Custom fonts for this template-->
-
 </head>
 
 <body class="bg-gradient-primary">
@@ -28,16 +26,16 @@
 
 
 <div class="container">
-
     <div class="card o-hidden border-0 shadow-lg my-5">
-        <div class="card-body p-0">          <div class="card-body">
+        <div class="card-body p-0">
+            <div class="card-body">
+
                 @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
                     </div>
                 @endif
-
-              @lang('home.YouareLoggedIn')!
+                @lang('home.YouareLoggedIn')!
             </div>
             <!-- Nested Row within Card Body -->
             <div class="row ">
@@ -46,9 +44,12 @@
                     <div class="p-5">
 
                         <div class="text-center">
+
+                            <!-- Main Heading-->
                             <h1 class="h4 text-gray-900 mb-4">{{ strtoupper(Auth::user()->name) }} WishList </h1>
                         </div>
                         <div>
+                            <!-- Button to add new wish-->
                         <a href="/addWishView" class="btn btn-success p-1">
                            @lang('home.makenewWish')
                         </a>
@@ -59,6 +60,8 @@
                                 {{Session::get('wish_deleted')}}
                             </div>
                         @endif
+
+                    <!-- List of Wishes-->
 <table class="table table-striped table-bordered table- text-gray-900">
 <thead>
 <tr>

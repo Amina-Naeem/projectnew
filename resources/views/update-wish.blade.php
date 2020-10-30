@@ -18,9 +18,6 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('/customeAuth/css/sb-admin-2.min.css') }}" rel="stylesheet">
-
-    <!-- Custom fonts for this template-->
-
 </head>
 
 <body class="bg-gradient-primary">
@@ -35,6 +32,8 @@
                 <div class="col-lg-7">
                     <div class="p-5">
                         <div class="text-center">
+
+                            <!-- Main Heading-->
                             <h1 class="h4 text-gray-900 mb-4"> @lang('home.update') @lang('home.wish')</h1>
                         </div>
                         @if(Session::has('wish_updated'))
@@ -46,20 +45,30 @@
     @csrf
                             <div class="form-group row text-gray-900">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
+
+                                    <!--show ID-->
                                     <label for="id">@lang('home.wish')@lang('home.id')</label>
                                     <input type="number" readonly id="id" name="id" class="form-control form-control-user" value="{{$wish->id}}">
 
                                 </div>
                             </div>
                             <div class="form-group text-gray-900">
+
+                                <!--show Wish-->
                                 <label for="wish">@lang('home.wish')</label>
                                 <p  name="wish"  class="form-control form-control-user" rows="3"><b>{{$wish->wish}}</b></p>
                             </div>
                             <div class="form-group row text-gray-900">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
-                                    <label for="fulfilled">@lang('home.fulfilled')</label>
-                                    <input name="fulfilled" id="fulfilled" value="{{$wish->fulfilled}}" type="text" class="form-control form-control-user"  required placeholder="@lang('home.yes')/@lang('home.nope')/@lang('home.other')"  >
 
+                                    <!--get fulfilled-->
+                                    <label for="fulfilled">@lang('home.fulfilled')</label>
+                                    <input name="fulfilled" id="fulfilled" value="{{$wish->fulfilled}}" type="text" class="form-control form-control-user @error ('wish') border border-red-500 @enderror"  required placeholder="@lang('home.yes')/@lang('home.nope')/@lang('home.other')"  >
+                                    @error ('fulfilled')
+                                    <div class="alert-message">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                             </div>
                             <button type="submit"  class="btn btn-success btn-primary btn-user btn-block">
