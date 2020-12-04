@@ -25,20 +25,24 @@ class WishController extends Controller
                 'wish' => 'required|min:5',
                 'fulfilled' => 'required|min:2',
             ]);
-            $wishid=DB::table('wishes')->where('email',Auth::user()->email)->where('id',$request->id)->first();
+            $wishid=Wish::where('email',Auth::user()->email)->where('id',$request->id)->first();
 
            //if ID is unique then store the wish into database where user email and wish ID makes composite key.
 
             if($wishid==null)
             {
-             $wish= new Wish();
-             $wish->id = $request->id;
-             $wish->wish=$request->wish;
-             $wish->fulfilled=$request->fulfilled;
-             $wish->email=Auth::user()->email;
-             $wish->save();
-             $msg= Lang::get('home.created');
-            return back()->with('wish_created',$msg);}
+                $attributes = $request -> all (
+                    'id',
+                    'wish',
+                    'fulfilled'
+                );
+
+                $attributes ['email'] = Auth::user()->email;;
+
+                Wish::create ($attributes);
+                $msg= Lang::get('home.created');
+                return back()->with('wish_created',$msg);
+            }
 
           //if ID exists then return with msg without storing data into database
 
@@ -52,7 +56,7 @@ class WishController extends Controller
          */
         public function index(){
           $currentuser=Auth::user()->email;
-          $wishes=DB::table('wishes')->where('email','=',$currentuser)->orderBy('id','ASC')->get();
+          $wishes=Wish::where('email','=',$currentuser)->orderBy('id','ASC')->get();
           return view('wishes',compact('wishes'));
         }
       /*
@@ -87,7 +91,7 @@ class WishController extends Controller
             request () -> validate ([
                 'fulfilled' => 'required|min:2',
             ]);
-            $wish=DB::table('wishes')->where('email',Auth::user()->email)->where('id',$request->id)->update(['fulfilled' => $request->fulfilled]);
+            Wish::where('email',Auth::user()->email)->where('id',$request->id)->update(['fulfilled' => $request->fulfilled]);
             $msg= Lang::get('home.updated');
             return back()->with('wish_updated',$msg);
         }
