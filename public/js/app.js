@@ -49886,8 +49886,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/aminanaeem/Desktop/code/WishList/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/aminanaeem/Desktop/code/WishList/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/aminanaeem/PhpstormProjects/crud-application-Amina-Naeem/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/aminanaeem/PhpstormProjects/crud-application-Amina-Naeem/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
