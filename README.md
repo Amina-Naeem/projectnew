@@ -25,3 +25,4 @@ php artisan ui vue --auth
 //Package for css
 Bootstrap. (2014). sb admin 2. Start Bootstrap. https://startbootstrap.com/themes/sb-admin-2/
 
+# advanced-application-Amina-Naeem
